@@ -1,0 +1,18 @@
+# Runtime data
+pids
+dist
+.build
+lib
+
+# Dependency directory
+node_modules
+jspm_packages
+.husky/_
+
+
+#SERVERLESS 
+.env
+_meta
+.serverless
+
+yarn.lock

@@ -1,0 +1,26 @@
+{
+  "name": "@monorepo/picking",
+  "version": "1.0.0",
+  "description": "> TODO: description",
+  "author": "\"Gabriella Staniecki\" <\"gabriella.staniecki@mobly.com.br\">",
+  "homepage": "",
+  "license": "ISC",
+  "scripts": {
+    "build": "rm -rf ./lib && tsc",
+    "prepare": "cd ../../.. && husky install",
+    "dev": "npx sls offline start --stage=dev",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rimraf .build .serverless swagger",
+    "deploy": "npx sls deploy --stage $SLS_STAGE --verbose",
+    "deploy:dev": "export SLS_STAGE=dev && yarn deploy",
+    "deploy:staging": "export SLS_STAGE=staging && yarn deploy",
+    "deploy:prod": "export SLS_STAGE=prod && yarn deploy",
+    "lint": "eslint '*.ts' --quiet --fix"
+  },
+  "dependencies": {
+    "@monorepo/order": "1.0.0"
+  },
+  "engines": {
+    "node": ">=18.17.0"
+  }
+}

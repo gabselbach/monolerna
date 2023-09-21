@@ -1,0 +1,9 @@
+{
+  "version": "independent",
+  "packages": [
+    "src/sdk",
+    "src/functions/order",
+    "src/functions/picking"
+  ],
+  "npmClient": "yarn"
+}

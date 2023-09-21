@@ -1,0 +1,11 @@
+# Ignore artifacts:
+coverage
+
+*.yml
+*.lock
+*.md
+
+.serverless
+.build
+.dist
+.husky
